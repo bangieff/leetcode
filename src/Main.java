@@ -1,7 +1,4 @@
-import easy.CommonPrefix;
-import easy.Palindrome;
-import easy.Roman2Int;
-import easy.TwoSum;
+import easy.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -32,5 +29,13 @@ public class Main {
         System.out.println("CommonPrefix Result: " + commonPrefix.longestCommonPrefix(new String[]{"ab","a"}));
         System.out.println("CommonPrefix Result: " + commonPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
         System.out.println("CommonPrefix Result: " + commonPrefix.longestCommonPrefix(new String[]{"dog","racecar","car"}));
+
+        ValidParentheses validParentheses = new ValidParentheses();
+        System.out.println("ValidParentheses Result: " + validParentheses.isValid("(abc)"));
+        System.out.println("ValidParentheses Result: " + validParentheses.isValid("(a)[c]{v}"));
+        System.out.println("ValidParentheses Result: " + validParentheses.isValid("123(]asd"));
+        System.out.println("ValidParentheses Result: " + validParentheses.isValid("(d[4)4]"));
+        System.out.println("ValidParentheses Result: " + validParentheses.isValid("([])"));
+        System.out.println("ValidParentheses Result: " + validParentheses.isValid("("));
     }
 }
