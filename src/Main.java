@@ -1,3 +1,4 @@
+import easy.CommonPrefix;
 import easy.Palindrome;
 import easy.Roman2Int;
 import easy.TwoSum;
@@ -26,5 +27,10 @@ public class Main {
         System.out.println("Roman2Int Result: " + roman2Int.romanToInt("IX"));
         System.out.println("Roman2Int Result: " + roman2Int.romanToInt("LVIII"));
         System.out.println("Roman2Int Result: " + roman2Int.romanToInt("MCMXCIV"));
+
+        CommonPrefix commonPrefix = new CommonPrefix();
+        System.out.println("CommonPrefix Result: " + commonPrefix.longestCommonPrefix(new String[]{"ab","a"}));
+        System.out.println("CommonPrefix Result: " + commonPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
+        System.out.println("CommonPrefix Result: " + commonPrefix.longestCommonPrefix(new String[]{"dog","racecar","car"}));
     }
 }
