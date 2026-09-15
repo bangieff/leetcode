@@ -7,6 +7,13 @@ public class TestMedium {
     public void runTests() {
         this.testAdd2Numbers();
         this.testLongestUniqueSubstring();
+        this.testRemoveDuplicates();
+    }
+
+    private void testRemoveDuplicates() {
+        RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+        System.out.println("RemoveDuplicates: " + removeDuplicates.removeDuplicates(new int[]{1, 1, 2}));
+        System.out.println("RemoveDuplicates: " + removeDuplicates.removeDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
     }
 
     private void testAdd2Numbers() {
