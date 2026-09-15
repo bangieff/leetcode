@@ -23,4 +23,17 @@ public class ListNode {
     public ListNode(int val, ListNode next) {
         this.val = val; this.next = next;
     }
+
+    @Override
+    public String toString() {
+        String result = "";
+
+        ListNode current = this;
+        while(current != null) {
+            result +=  result.isEmpty()?current.val:" -> " + current.val;
+            current = current.next;
+        }
+
+        return result;
+    }
 }

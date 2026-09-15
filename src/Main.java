@@ -1,4 +1,5 @@
 import easy.TestEasy;
+import hard.TestHard;
 import medium.TestMedium;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -10,6 +11,9 @@ public class Main {
 
         TestMedium testMedium = new TestMedium();
         testMedium.runTests();
+
+        TestHard testHard = new TestHard();
+        testHard.runTests();
     }
 
 }
