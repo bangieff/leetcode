@@ -26,14 +26,17 @@ public class ListNode {
 
     @Override
     public String toString() {
-        String result = "";
+        StringBuilder sb = new StringBuilder();
 
         ListNode current = this;
         while(current != null) {
-            result +=  result.isEmpty()?current.val:" -> " + current.val;
+            if(!sb.isEmpty()) {
+                sb.append(" -> ");
+            }
+            sb.append(current.val);
             current = current.next;
         }
 
-        return result;
+        return sb.toString();
     }
 }
