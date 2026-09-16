@@ -8,6 +8,14 @@ public class TestMedium {
         this.testAdd2Numbers();
         this.testLongestUniqueSubstring();
         this.testRemoveDuplicates();
+        this.testZigzagConversion();
+
+    }
+
+    private void testZigzagConversion() {
+        ZigzagConversion zigzagConversion = new ZigzagConversion();
+        System.out.println("ZigzagConversion: " + zigzagConversion.convert("AB", 1));
+        System.out.println("ZigzagConversion: " + zigzagConversion.convert("PAYPALISHIRING", 3));
     }
 
     private void testRemoveDuplicates() {
